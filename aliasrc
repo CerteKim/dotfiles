@@ -1,0 +1,7 @@
+alias cat="bat --style=plain"
+alias l="eza --icons"
+alias la="eza --icons -lgha --group-directories-first"
+alias lt="eza --icons --tree"
+alias lta="eza --icons --tree -lgha"
+alias ll="eza -lF -a --icons --total-size --no-permissions --no-time --no-user"
+alias ssh="kitten ssh"

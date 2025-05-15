@@ -1,0 +1,15 @@
+plugins = (
+	git
+	command-not-found
+	copyfile
+	node
+	npm
+	timer
+	vscode
+	web-search
+	z
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+	you-should-use
+	zsh-alias-finder
+)
