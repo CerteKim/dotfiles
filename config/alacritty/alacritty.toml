@@ -25,3 +25,9 @@ style = "Italic"
 [font.normal]
 family = "JetBrainsMonoNL Nerd Font Mono"
 style = "Regular"
+
+[keyboard]
+bindings = [
+    { key = "C", mods = "Control | Shift", action = "Copy" },
+    { key = "V", mods = "Control | Shift", action = "Paste" }
+]
