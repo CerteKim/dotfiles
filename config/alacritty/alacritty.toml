@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/midnight_haze.toml"
+    "~/.config/alacritty/xcodedark.toml"
 ]
 
 [env]
