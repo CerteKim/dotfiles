@@ -1,136 +1,107 @@
+@import url("./mocha.css");
+
 * {
-    border: none;
-    font-family: "Fira Sans Compressed", "Noto Sans CJK SC";
-    font-size: 14px;
-    min-height: 12px;
+  font-family: "Maple Mono NF";
+  font-size: 17px;
+  min-height: 0;
 }
 
 #waybar {
-    background: rgba(20, 20, 20, 20);
-    min-height: 20px;
-    border-radius: 0px;
-}
-
-#window {
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    transition: none;
-    color: white;
-    background: transparent;
-    font-family: "Fira Sans SemiBold", "Noto Sans CJK SC";
+  background: transparent;
+  color: @text;
+  margin: 5px 5px;
 }
 
 #workspaces {
-    color: #EEEEEE;
-    background: rgba(50, 50, 50, 80);
-    margin: 6px;
-    font-family: "Liberation Mono";
-    border-radius: 5px;
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @surface0;
+  margin-left: 1rem;
 }
+
 #workspaces button {
-    margin: 2px;
-    color: white;
-    background: rgba(50, 50, 50, 80);
+  color: @lavender;
+  border-radius: 1rem;
 }
+
+#workspaces button.active {
+  color: @sky;
+  border-radius: 1rem;
+}
+
 #workspaces button:hover {
-    color: black;
-    background: rgba(200, 200, 200, 80);
+  color: @sapphire;
+  border-radius: 1rem;
 }
 
-#network,
-#pulseaudio,
+#custom-music,
+#tray,
+#backlight,
+#clock,
 #battery,
-#backlight {
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    transition: none;
-    background: transparent;
-    color: white;
-}
-
-#network:hover,
-#pulseaudio:hover,
-#battery:hover,
-#backlight:hover
-{
-    background: rgba(50, 50, 50, 80);
-}
-
-#battery.charging, #battery.plugged {
-    color: white;
-}
-
-#battery.critical:not(.charging) {
-        animation-name: blink;
-        animation-duration: 0.5s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-}
-
-@keyframes blink {
-    to {
-        background-color: #BF616A;
-        color: #B5E8E0;
-    }
+#pulseaudio,
+#custom-lock,
+#language,
+#custom-power {
+  background-color: @surface0;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
 }
 
 #clock {
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    transition: none;
-    color: white;
-    font-size: 14px;
-    font-family: Fira Code;
-    background: transparent;
+  color: @blue;
+  border-radius: 0px 1rem 1rem 0px;
+  margin-right: 1rem;
 }
 
-#memory {
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    transition: none;
-    color: white;
-    background: rgba(0, 0, 0, 80);
+#battery {
+  color: @green;
 }
-#cpu {
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    transition: none;
-    color: white;
-    background: rgba(0, 0, 0, 80);
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#backlight,
+#battery {
+  border-radius: 0;
+}
+
+#pulseaudio {
+  color: @maroon;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
+}
+
+#custom-music {
+  color: @mauve;
+  border-radius: 1rem;
+}
+
+#language {
+  border-radius: 1rem 0px 0px 1rem;
+  color: @lavender;
+}
+
+#custom-power {
+  margin-right: 1rem;
+  border-radius: 0px 1rem 1rem 0px;
+  color: @red;
 }
 
 #tray {
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    transition: none;
-    background: transparent;
+  margin-right: 1rem;
+  border-radius: 1rem;
 }
 
-#custom-launcher {
-    font-size: 24px;
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    transition: none;
-    color: rgb(134, 216, 231);
-    background: rgb(22, 19, 32);
-}
-
-#temperature {
-    padding: 10px;
-    color: white;
+#workspaces button.urgent {
+  color: @red;
 }
