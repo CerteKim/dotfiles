@@ -12,6 +12,16 @@
   margin: 5px 5px;
 }
 
+#custom-launcher {
+  border-radius: 1rem;
+  background-color: @surface0;
+  color: @sapphire;
+  margin-left: 1rem;
+  margin: 5px 5px;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+
 #workspaces {
   border-radius: 1rem;
   margin: 5px;
@@ -37,6 +47,7 @@
 #custom-music,
 #tray,
 #backlight,
+#custom-ddcutil,
 #clock,
 #battery,
 #pulseaudio,
@@ -69,6 +80,10 @@
 #backlight {
   color: @yellow;
 }
+#custom-ddcutil {
+  color: @yellow;
+}
+#custom-ddcutil,
 
 #backlight,
 #battery {
