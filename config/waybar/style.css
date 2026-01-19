@@ -80,6 +80,7 @@
 #backlight {
   color: @yellow;
 }
+
 #custom-ddcutil {
   color: @yellow;
 }
@@ -94,6 +95,17 @@
   color: @maroon;
   border-radius: 1rem 0px 0px 1rem;
   margin-left: 1rem;
+}
+
+#custom-polycat {
+  font-family: "Polycat", "Maple Mono NF";
+  background-color: @surface0;
+  color: @maroon;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  margin: 5px 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #custom-music {
