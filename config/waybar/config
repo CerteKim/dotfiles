@@ -126,8 +126,8 @@
 	},
 	"custom/launcher":{
 		"format": "",
-		"on-click": "fuzzel",
-		"on-click-right": "fuzzel"
+		"on-click": "fuzzel --config ~/.config/fuzzel/menu.ini",
+		"on-click-right": "fuzzel --config ~/.config/fuzzel/menu.ini"
 	},
 	"custom/polycat":{
 		"exec": "polycat",
