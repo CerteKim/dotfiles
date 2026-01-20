@@ -26,7 +26,7 @@
   border-radius: 1rem;
   margin: 5px;
   background-color: @surface0;
-  margin-left: 1rem;
+  /*margin-left: 1rem;*/
 }
 
 #workspaces button {
@@ -128,9 +128,9 @@
 }
 
 #tray {
-  margin-right: 1rem;
+  /*margin-right: 1rem;*/
   border-radius: 1rem;
-  background-color: @lavender;
+  background-color: @surface2;
 }
 
 #workspaces button.urgent {
