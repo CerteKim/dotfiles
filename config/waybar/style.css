@@ -9,17 +9,18 @@
 #waybar {
   background: transparent;
   color: @text;
-  margin: 5px 5px;
+  margin: 1rem 1rem;
+  box-shadow: inset 0px 10px 5px rgba(0,0,0,0.2);
 }
 
 #custom-launcher {
   border-radius: 1rem;
   background-color: @surface0;
   color: @sapphire;
-  margin-left: 1rem;
-  margin: 5px 5px;
+  margin: 5px 0.5rem 5px 0.5rem;
   padding-left: 1rem;
   padding-right: 1.5rem;
+  box-shadow: 4px 2px 2px rgba(0,0,0,0.5);
 }
 
 #workspaces {
@@ -27,6 +28,7 @@
   margin: 5px;
   background-color: @surface0;
   /*margin-left: 1rem;*/
+  box-shadow: 4px 2px 2px rgba(0,0,0,0.5);
 }
 
 #workspaces button {
@@ -44,28 +46,25 @@
   border-radius: 1rem;
 }
 
-#custom-music,
-#tray,
-#backlight,
-#custom-ddcutil,
-#clock,
-#battery,
-#pulseaudio,
 #custom-lock {
-  background-color: @surface0;
-  padding: 0.5rem 1rem;
-  margin: 5px 0;
-}
-#custom-power {
   background-color: @surface0;
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
 
 #clock {
+  /*background: @surface0;*/
   color: @blue;
   border-radius: 0px 1rem 1rem 0px;
-  margin-right: 1rem;
+  padding: 5px;
+  /*margin: 5px 5px 5px 0px;*/
+}
+
+#status {
+  background: @surface0;
+  border-radius: 1rem;
+  margin: 5px;
+  box-shadow: 4px 2px 2px rgba(0,0,0,0.5);
 }
 
 #battery {
@@ -85,19 +84,23 @@
 }
 
 #custom-ddcutil {
+  /*background: @surface0;*/
   color: @yellow;
+  /*border-radius: 0px 0px 0px 0px;*/
+  padding: 5px;
+  /*margin: 5px 0px;*/
 }
-#custom-ddcutil,
 
-#backlight,
 #battery {
   border-radius: 0;
 }
 
 #pulseaudio {
+  /*background: @surface0;*/
   color: @maroon;
   border-radius: 1rem 0px 0px 1rem;
-  margin-left: 1rem;
+  padding: 5px;
+  /*margin: 5px 0px 5px 5px;*/
 }
 
 #custom-polycat {
@@ -105,10 +108,10 @@
   background-color: @surface0;
   color: @maroon;
   border-radius: 1rem;
-  margin-left: 1rem;
   margin: 5px 5px;
   padding-left: 1rem;
   padding-right: 1rem;
+  box-shadow: 4px 2px 2px rgba(0,0,0,0.5);
 }
 
 #custom-music {
@@ -120,17 +123,24 @@
   margin-left: 1rem;
   border-radius: 1rem 0px 0px 1rem;
   color: @red;
+  /*box-shadow: 2px 2px 2px rgba(0,0,0,0.5);*/
 }
 #custom-power {
-  margin-right: 1rem;
-  border-radius: 0px 1rem 1rem 0px;
+  background-color: @surface0;
+  padding: 0.5rem 1rem;
+  margin: 5px 0.5rem 5px 0.5rem;
+  /*border-radius: 0px 1rem 1rem 0px;*/
+  border-radius: 1rem;
   color: @red;
+  box-shadow: 4px 2px 2px rgba(0,0,0,0.5);
 }
 
 #tray {
-  /*margin-right: 1rem;*/
+  margin: 0.5rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   background-color: @surface2;
+  box-shadow: 4px 2px 2px rgba(0,0,0,0.5);
 }
 
 #workspaces button.urgent {

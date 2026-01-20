@@ -10,14 +10,18 @@
 		"custom/music"
 	],
 	"modules-right": [
-		"pulseaudio",
-		"custom/ddcutil",
-		"clock",
+	    "group/status",
 		"tray",
-		"hyprland/language",
-		"custom/lock",
 		"custom/power"
 	],
+	"group/status": {
+		"orientation": "horizontal",
+	    "modules": [
+			"pulseaudio",
+			"custom/ddcutil",
+			"clock"
+		]
+	},
 	"hyprland/workspaces": {
 		"on-click": "activate",
 		"on-scroll-up": "hyprctl dispatch workspace e-1",
