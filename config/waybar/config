@@ -4,24 +4,28 @@
 	"modules-left": [
 		"custom/launcher",
 		"custom/polycat",
-		"hyprland/workspaces"
+		"hyprland/workspaces",
+		"hyprland/window"
 	],
 	"modules-center": [
-		"hyprland/window",
 		"custom/music"
 	],
 	"modules-right": [
-	    "group/status",
-		"tray",
-		"custom/power"
+      "group/status",
+      "tray",
+      "custom/power"
 	],
 	"group/status": {
-		"orientation": "horizontal",
-	    "modules": [
-			"pulseaudio",
-			"custom/ddcutil",
-			"clock"
-		]
+      "orientation": "horizontal",
+	  "modules": [
+        "wireplumber",
+        "custom/ddcutil",
+		"clock",
+        "bluetooth"
+	  ]
+	},
+	"hyprland/window": {
+	  "format": "{title}"
 	},
 	"hyprland/workspaces": {
 		"on-click": "activate",
@@ -136,5 +140,26 @@
 		"format": "{text}",
 		"tooltip": false,
 		"restart-interval": 5
-	}
+	},
+  "bluetooth": {
+    "format-disable": "󰂲",
+    "format-on": "󰂯",
+    "format-connected": "󰂰",
+    "on-click": "overskride",
+  },
+  "wireplumber": {
+    "on-click": "pwvucontrol",
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁",
+    "format-bluetooth": "󰂰 {icon} {volume}%",
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": "󰂰 ",
+      "headset": "󰋎 ",
+      "phone": "󰏶 ",
+      "portable": "",
+      "car": " ",
+      "default": ["", "", ""],
+    },
+  },
 }

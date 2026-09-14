@@ -293,8 +293,8 @@ hl.bind(mainMod .. " + SHIFT + up", hl.dsp.window.move({ workspace = "r+1" }))
 -- hl.bind(mainMod .. " + SHIFT + up", hl.dsp.window.fullscreen({ action = "toggle" }))
 hl.bind(mainMod .. " + SHIFT + down", hl.dsp.window.move({ workspace = "r-1" }))
 -- hl.bind(mainMod .. " + SHIFT + down", hl.dsp.window.fullscreen({ action = "toggle" }))
-hl.bind(mainMod .. " + SHIFT + right", hl.dsp.focus({ workspace = "e+1" }))
-hl.bind(mainMod .. " + SHIFT + left", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind(mainMod .. " + SHIFT + right", hl.dsp.focus({ workspace = "r+1" }))
+hl.bind(mainMod .. " + SHIFT + left", hl.dsp.focus({ workspace = "r-1" }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 
 -- Move focus with mainMod + arrow keys

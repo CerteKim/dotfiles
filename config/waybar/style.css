@@ -2,14 +2,15 @@
 
 * {
   font-family: "Maple Mono NF";
-  font-size: 17px;
+  font-size: 16px;
   min-height: 0;
+  padding: 2px 5px 2px 5px;
 }
 
 #waybar {
   background: transparent;
   color: @text;
-  margin: 1rem 1rem;
+  margin: 0.5rem 0.5rem;
   box-shadow: inset 0px 10px 5px rgba(0,0,0,0.2);
 }
 
@@ -48,7 +49,8 @@
 
 #custom-lock {
   background-color: @surface0;
-  padding: 0.5rem 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   margin: 5px 0;
 }
 
@@ -56,7 +58,8 @@
   /*background: @surface0;*/
   color: @blue;
   border-radius: 0px 1rem 1rem 0px;
-  padding: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   /*margin: 5px 5px 5px 0px;*/
 }
 
@@ -87,7 +90,8 @@
   /*background: @surface0;*/
   color: @yellow;
   /*border-radius: 0px 0px 0px 0px;*/
-  padding: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   /*margin: 5px 0px;*/
 }
 
@@ -95,11 +99,12 @@
   border-radius: 0;
 }
 
-#pulseaudio {
+#wireplumber {
   /*background: @surface0;*/
   color: @maroon;
-  border-radius: 1rem 0px 0px 1rem;
-  padding: 5px;
+  /*border-radius: 1rem 0px 0px 1rem;*/
+  padding-left: 1rem;
+  padding-right: 0.5rem;
   /*margin: 5px 0px 5px 5px;*/
 }
 
@@ -115,8 +120,10 @@
 }
 
 #custom-music {
+  background-color: @surface2;
   color: @mauve;
   border-radius: 1rem;
+  margin: 0.5rem;
 }
 
 #custom-lock {
@@ -127,7 +134,8 @@
 }
 #custom-power {
   background-color: @surface0;
-  padding: 0.5rem 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin: 5px 0.5rem 5px 0.5rem;
   /*border-radius: 0px 1rem 1rem 0px;*/
   border-radius: 1rem;
@@ -137,7 +145,8 @@
 
 #tray {
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-radius: 1rem;
   background-color: @surface2;
   box-shadow: 4px 2px 2px rgba(0,0,0,0.5);
@@ -145,4 +154,31 @@
 
 #workspaces button.urgent {
   color: @red;
+}
+
+#window {
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1rem;
+  background-color: @surface2;
+  box-shadow: 4px 2px 2px rgba(0,0,0,0.5);
+}
+
+window#waybar.empty #window {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+#bluetooth {
+  /*margin: 0.5rem 0.5rem 0.5rem 0.5rem;*/
+  padding-right: 1rem;
+  /*
+  border-radius: 1rem;
+  background-color: @surface0;
+  box-shadow: 4px 2px 2px rgba(0,0,0,0.5);
+  */
 }
